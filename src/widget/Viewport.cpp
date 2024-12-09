@@ -1048,7 +1048,7 @@ void Viewport::wheelEvent(QWheelEvent* event) {
     float delta = 0.0f;
 
     if (!numPixels.isNull()) {
-      delta = numPixels.y();
+      delta = numPixels.y() / 30.;
     } else if (!numDegrees.isNull()) {
       delta = numDegrees.y() / 15.;
     }

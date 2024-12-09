@@ -287,7 +287,7 @@ class Viewport : public QGLWidget {
   glow::GlProgram prgDrawBoundingBoxes_;
   glow::GlProgram prgDrawSelectedBoundingBox_;
 
-  int32_t pointSize_{1};
+  int32_t pointSize_{2};
 
   glow::GlUniform<Eigen::Matrix4f> mvp_{"mvp", Eigen::Matrix4f::Identity()};
   glow::GlUniform<Eigen::Matrix4f> mvp_inv_t_{"mvp_inv_t", Eigen::Matrix4f::Identity()};
